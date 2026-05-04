@@ -9,7 +9,8 @@ public class Singleplayer extends game
 {
     private boolean storyMode;
     private String difficulty;
-    public Singleplayer()
+    public Singleplayer(String name, int gamesId, AgeRating ageRating, Genre genre, Platform platform, boolean storyMode, String difficulty)
     {
+        super(name, gamesId, ageRating, genre, platform);
     }
 }

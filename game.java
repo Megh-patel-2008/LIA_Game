@@ -12,7 +12,7 @@ public class game
     private AgeRating ageRating;
     private String name;
     private int gamesId;
-    public game()
+    public game(String name, int gamesId, AgeRating ageRating, Genre genre, Platform platform)
     {
         this.name     = name;
         this.gamesId  = gamesId;

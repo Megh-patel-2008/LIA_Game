@@ -8,8 +8,9 @@
 public class Multiplayer extends game
 {
     private int maxPlayers;
-    public Multiplayer()
+    public Multiplayer(String name, int gamesId, AgeRating ageRating, Genre genre, Platform platform, int maxPlayers)
     {
-        
+        super(name, gamesId, ageRating, genre, platform);
+        this.maxPlayers= maxPlayers;
     }
 }
