@@ -14,7 +14,5 @@ public class Game_Library
         game = new ArrayList<>(); 
         loadGames();
     }
-    private void loadGames(){
-        games.add(new Singleplayergame);
-    }
+    
 }
