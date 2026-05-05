@@ -14,6 +14,5 @@ public class Main
     public Main()
     {
         this.gameLibrary = gameLibrary;
-        
     }
 }
