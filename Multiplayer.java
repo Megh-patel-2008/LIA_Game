@@ -13,10 +13,10 @@ public class Multiplayer extends game
         super(name, gamesId, ageRating, genre, platform);
         this.maxPlayers= maxPlayers;
     }
-    public void /*String*/ getDetails()
+    /*public String getDetails()
     {
-    }
-    public void /*int*/ maxPlayers()
+    }*/
+    public void /*int*/ maxPlayers(int maxPlayers)
     {
     }
     public void setMaxPlayers(int maxPlayers)
