@@ -12,8 +12,10 @@ public class Singleplayer extends game
     public Singleplayer(String name, int gamesId, AgeRating ageRating, Genre genre, Platform platform, boolean storyMode, String difficulty)
     {
         super(name, gamesId, ageRating, genre, platform);
+        this.storyMode = storyMode;
+        this.difficulty = difficulty;
     }
     public String getDetails(){
-        return super() + String.format(" | Difficulty: %-6s | Story Mode: %s", difficulty, storyMode ? "Yes" : "No");
+        return super.getDetails() + String.format(" | Difficulty: %-6s | Story Mode: %s", difficulty, storyMode ? "Yes" : "No");
     }
 }
