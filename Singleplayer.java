@@ -13,4 +13,7 @@ public class Singleplayer extends game
     {
         super(name, gamesId, ageRating, genre, platform);
     }
+    public String getDetails(){
+        return super() + String.format(" | Difficulty: %-6s | Story Mode: %s", difficulty, storyMode ? "Yes" : "No");
+    }
 }
