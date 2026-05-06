@@ -61,7 +61,15 @@ public class Main
                     continue;
             }
             //Genre, Age Rating and End result left
-            //Also a loop to repeat the whole process
+            System.out.println("Would like to look for another game?");
+            System.out.println("1. Yes");
+            System.out.println("2. No");
+            int again = readInt("Your choice is: ");
+            if(again !=1)
+            {
+                System.out.println("\nThank you come again");
+                keepGoing = false;
+            }
         }
         scanner.close();
     }
