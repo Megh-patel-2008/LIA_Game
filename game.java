@@ -44,12 +44,24 @@ public class game
     {
         return platform;
     }
-    //Add setter methods
-    public boolean equals(Object obj)
+    public void setName(String name)
     {
-        if(this==obj)return true;
-        if (!(obj instanceof game)) return false;
-        game other = (game) obj;
+        this.name = name;
+    }
+    public void setAgeRating(AgeRating ageRating)
+    {
+        this.ageRating = ageRating;
+    }
+    public void setGenre(Genre genre)
+    {
+        this.genre = genre;
+    }
+    public void Platform(Platform platform)
+    {
+        this.platform = platform;
+    }
+    public boolean equals(game other)
+    {
         return this.gamesId == other.gamesId;
     }
     public String toString()
@@ -57,3 +69,17 @@ public class game
         return getDetails();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

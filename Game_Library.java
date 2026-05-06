@@ -11,8 +11,9 @@ public class Game_Library
     private game game;
     public Game_Library()
     {
-        game = new ArrayList<>(); 
+        /*game = new ArrayList<>(); 
         loadGames();
+        Also if the code isn't working put it as a comment*/ 
     }
     
 }
