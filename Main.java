@@ -60,7 +60,24 @@ public class Main
                     System.out.println("Please choose a valid option.");
                     continue;
             }
-            //Genre, Age Rating and End result left
+            System.out.println("\nWhich age category?");
+            System.out.println(" 1. Child");
+            System.out.println(" 2. Teen");
+            System.out.println(" 3. Adult");
+            int ageChoice = readInt("Your choice: ");
+            
+            AgeRating ageRating;
+            switch(ageChoice){
+                case 1: ageRating = AgeRating.CHILD;
+                break;
+                case 2: ageRating = AgeRating.TEEN;
+                break;
+                case 3: ageRating = AgeRating.ADULT;
+                break;
+                default:
+                    System.out.println("Please choose a valid option.");
+                    continue;
+            }
             //Also a loop to repeat the whole process
         }
         scanner.close();
