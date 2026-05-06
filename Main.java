@@ -60,6 +60,7 @@ public class Main
                     System.out.println("Please choose a valid option.");
                     continue;
             }
+
             System.out.println("\nWhich age category?");
             System.out.println(" 1. Child");
             System.out.println(" 2. Teen");
@@ -79,6 +80,18 @@ public class Main
                     continue;
             }
             //Also a loop to repeat the whole process
+
+            //Genre, Age Rating and End result left
+            System.out.println("Would like to look for another game?");
+            System.out.println("1. Yes");
+            System.out.println("2. No");
+            int again = readInt("Your choice is: ");
+            if(again !=1)
+            {
+                System.out.println("\nThank you come again");
+                keepGoing = false;
+            }
+
         }
         scanner.close();
     }
