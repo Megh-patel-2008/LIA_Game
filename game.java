@@ -64,9 +64,8 @@ public class game
     {
         return this.gamesId == other.gamesId;
     }
-    public String toString()
-    {
-        return getDetails();
+    public String toString() {
+        return "ID: " + gamesId + " Name: " + name + " Genre: " + genre + " Platform: " + platform + " Age: " + ageRating;
     }
 }
 

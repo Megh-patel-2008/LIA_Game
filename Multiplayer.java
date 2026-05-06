@@ -25,8 +25,7 @@ public class Multiplayer extends game
     {
         this.maxPlayers = maxPlayers;
     }
-    public String toString()
-    {
-        return getDetails();
+    public String toString() {
+        return super.toString() + " Max Players: " + maxPlayers;
     }
 }

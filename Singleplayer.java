@@ -18,4 +18,7 @@ public class Singleplayer extends game
     public String getDetails(){
         return super.getDetails() + String.format(" | Difficulty: %-6s | Story Mode: %s", difficulty, storyMode ? "Yes" : "No");
     }
+    public String toString() {
+        return super.toString() + " Difficulty: " + difficulty + ", Story Mode: " + storyMode;
+    }
 }
