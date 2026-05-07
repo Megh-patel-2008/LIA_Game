@@ -9,11 +9,18 @@ import java.util.ArrayList;
 public class Game_Library
 {
     private game game;
+    private ArrayList<game> games;
     public Game_Library()
     {
-        /*game = new ArrayList<>(); 
+        games = new ArrayList<>();
         loadGames();
-        Also if the code isn't working put it as a comment*/ 
     }
-    
+    public void loadGames(){
+        games.add(new Singleplayer("The Witcher 3", 1, AgeRating.ADULT, Genre.RPG, Platform.PC, true, "Hard"));
+        games.add(new Singleplayer("Resident Evil 4", 2, AgeRating.ADULT, Genre.HORROR, Platform.PC, true, "Medium"));
+        games.add(new Singleplayer("Civilization VI", 3, AgeRating.TEEN, Genre.STRATEGY, Platform.PC, false, "Hard"));
+        games.add(new Multiplayer("FIFA 25", 4, AgeRating.TEEN, Genre.SPORTS, Platform.PC, 4));
+        games.add(new Multiplayer("Age of Empires IV", 5, AgeRating.TEEN, Genre.STRATEGY, Platform.PC, 8));
+        games.add(new Multiplayer("Dead by Daylight", 6, AgeRating.ADULT, Genre.HORROR, Platform.PC, 5));
+    }
 }
