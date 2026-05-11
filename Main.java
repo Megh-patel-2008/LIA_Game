@@ -79,9 +79,41 @@ public class Main
                     System.out.println("Please choose a valid option.");
                     continue;
             }
-            //Also a loop to repeat the whole process
-
-            //Genre, Age Rating and End result left
+            
+            System.out.println("\nWhich genre will you choose?");
+            System.out.println(" 1. Strategy");
+            System.out.println(" 2. RPG");
+            System.out.println(" 3. Sports");
+            System.out.println(" 4. Horror");
+            int genreChoice = readInt("Your Choice: ");
+            
+            Genre genre;
+            switch(genreChoice){
+                case 1: genre = Genre.STRATEGY;
+                break;
+                case 2: genre = Genre.RPG;
+                break;
+                case 3: genre = Genre.SPORTS;
+                break;
+                case 4: genre = Genre.HORROR; 
+                default:
+                    System.out.println("Please choose a valid option");
+                    continue;
+            }
+            
+            ArrayList<game> results = library.filter(isSinglePlayer, platform, genre, ageRating);
+            System.out.println("============================");
+            System.out.println(" Result for: " + (isSinglePlayer ? "Singleplayer" : "Multiplayer") + ", " + platform + ", " + genre + ", " + ageRating);
+            System.out.println("============================");
+            if (results.isEmpty()) {
+                System.out.println("  No games found matching your selection.");
+            } else {
+                System.out.println("  " + results.size() + " game(s) found:\n");
+                for (game g : results) {
+                    System.out.println(g.getDetails());
+                }
+            }
+            
             System.out.println("Would like to look for another game?");
             System.out.println("1. Yes");
             System.out.println("2. No");
