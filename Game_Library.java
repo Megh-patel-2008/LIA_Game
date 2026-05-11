@@ -24,6 +24,12 @@ public class Game_Library
         games.add(new Multiplayer("Dead by Daylight", 6, AgeRating.ADULT, Genre.HORROR, Platform.PC, 5));
         games.add(new Singleplayer("Alto's Odyssey", 7, AgeRating.CHILD, Genre.RPG, Platform.MOBILE, false, "Easy"));
         games.add(new Singleplayer("Plague Inc", 8, AgeRating.TEEN, Genre.STRATEGY, Platform.MOBILE, false, "Medium"));
+        games.add(new Singleplayer("Five Nights at Freddy's", 9, AgeRating.TEEN, Genre.HORROR, Platform.MOBILE, true, "Hard"));
+        games.add(new Multiplayer("FIFA Mobile", 10, AgeRating.CHILD, Genre.SPORTS, Platform.MOBILE,2));
+        games.add(new Multiplayer("Clash of Clans", 11, AgeRating.TEEN, Genre.STRATEGY, Platform.MOBILE, 50));
+        games.add(new Multiplayer("Among Us", AgeRating.CHILD, Genre.STRATEGY,Platform.MOBILE, 10));
+        games.add(new Singleplayer("God of War", 13, AgeRating.ADULT, Genre.RPG, Platform.PLAYSTATION, true, "Medium"));
+        
     }
     public ArrayList<game> filter(boolean isSinglePlayer, Platform platform, Genre genre, AgeRating ageRating){
         ArrayList<game> result = new ArrayList<>();
