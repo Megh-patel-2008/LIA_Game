@@ -113,7 +113,6 @@ public class Main
                     System.out.println(g.getDetails());
                 }
             }
-            
             System.out.println("Would like to look for another game?");
             System.out.println("1. Yes");
             System.out.println("2. No");
