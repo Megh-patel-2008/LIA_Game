@@ -11,5 +11,5 @@ public enum Platform
     MOBILE,
     PLAYSTATION,
     XBOX,
-    NINTEND0
+    NINTENDO
 }

@@ -42,7 +42,10 @@ public class Game_Library
         games.add(new Multiplayer("Gears 5", 24, AgeRating.ADULT, Genre.STRATEGY, Platform.XBOX, 4));
         games.add(new Singleplayer("Zelda Tears of the Kingdom", 25, AgeRating.CHILD, Genre.RPG, Platform.NINTENDO, true, "Medium"));
         games.add(new Singleplayer("Fire Emblem Engage", 26, AgeRating.TEEN, Genre.STRATEGY, Platform.NINTENDO, true, "Hard"));
-
+        games.add(new Singleplayer("Luigi's Mansion 3", 27, AgeRating.CHILD, Genre.HORROR, Platform.NINTENDO, true, "Easy"));
+        games.add(new Multiplayer("Mario Kart 8", 28, AgeRating.CHILD, Genre.SPORTS, Platform.NINTENDO, 4));
+        games.add(new Multiplayer("Mario Party Superstars", 29, AgeRating.CHILD, Genre.STRATEGY, Platform.NINTENDO, 4));
+        games.add(new Multiplayer("Pokemon Unite", 30, AgeRating.CHILD, Genre.RPG, Platform.NINTENDO, 5));
     }
     public ArrayList<game> filter(boolean isSinglePlayer, Platform platform, Genre genre, AgeRating ageRating){
         ArrayList<game> result = new ArrayList<>();

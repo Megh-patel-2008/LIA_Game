@@ -54,7 +54,7 @@ public class Main
                 break;
                 case 4: platform = Platform.XBOX;
                 break;
-                case 5: platform = Platform.NINTEND0;
+                case 5: platform = Platform.NINTENDO;
                 break;
                 default:
                     System.out.println("Please choose a valid option.");
