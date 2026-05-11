@@ -80,7 +80,7 @@ public class Main
                     continue;
             }
             //Also a loop to repeat the whole process
-
+            
             //Genre, Age Rating and End result left
             System.out.println("Would like to look for another game?");
             System.out.println("1. Yes");

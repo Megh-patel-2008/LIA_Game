@@ -23,4 +23,18 @@ public class Game_Library
         games.add(new Multiplayer("Age of Empires IV", 5, AgeRating.TEEN, Genre.STRATEGY, Platform.PC, 8));
         games.add(new Multiplayer("Dead by Daylight", 6, AgeRating.ADULT, Genre.HORROR, Platform.PC, 5));
     }
+    public ArrayList<game> filter(boolean isSinglePlayer, Platform platform, Genre genre, AgeRating ageRating){
+        ArrayList<game> result = new ArrayList<>();
+        for (game g : games){
+             boolean typeMatch = isSinglePlayer ? (g instanceof Singleplayer) : (g instanceof Multiplayer);
+             if(typeMatch && g.getPlatform() == platform && g.getGenre() == genre && g.getAgeRating() == ageRating){
+                 result.add(g);
+             }
+             
+        }
+        return result;
+    }
+    public ArrayList<game> getGames(){
+        return games;
+    }
 }
