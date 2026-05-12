@@ -102,11 +102,13 @@ public class Main
             }
             
             ArrayList<game> results = library.filter(isSinglePlayer, platform, genre, ageRating);
-            System.out.println("============================");
+            System.out.println("======================================================================================================================");
             System.out.println(" Result for: " + (isSinglePlayer ? "Singleplayer" : "Multiplayer") + ", " + platform + ", " + genre + ", " + ageRating);
-            System.out.println("============================");
+            System.out.println("======================================================================================================================");
             if (results.isEmpty()) {
-                System.out.println("  No games found matching your selection.");
+                System.out.println("No games found matching your selection.");
+                System.out.println("Please do add your own game propositions aswell.");
+                System.out.println("==================================================");
             } else {
                 System.out.println("  " + results.size() + " game(s) found:\n");
                 for (game g : results) {

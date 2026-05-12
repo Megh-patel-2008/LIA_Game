@@ -22,7 +22,7 @@ public class game
     }
     public String getDetails()
     {
-        return String.format("  [%d] %-25s | Genre: %-10s | Platform: %-8s | Age: %s", gamesId, name, genre, platform, ageRating);
+        return String.format("  [%d] %-25s , Genre: %-10s , Platform: %-8s , Age: %s", gamesId, name, genre, platform, ageRating);
     }
     public String getName()
     {
