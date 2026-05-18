@@ -124,10 +124,38 @@ public class Main
                 System.out.println("\nThank you come again");
                 keepGoing = false;
             }
-
+            
         }
         scanner.close();
+        System.out.println("\nWhat would you like to do?");
+        System.out.println("1. Search for Single Player games");
+        System.out.println("2. Search for Multi Player games");
+        System.out.println("3. List All Games");
+        System.out.println("0. Exit");
+        int typeChoice = readInt("Your choice: ");
+        if(typeChoice == 0){
+            System.out.println("\nSee you next time!");
+        }
+        if(typeChoice ==3){
+            ArrayList<game> allGames = library.getAllGames();
+            System.out.println("======================================================================================================================");
+            System.out.println("                                       All Games in Library");
+            System.out.println("======================================================================================================================");
+        }
+        if(allGames.isEmpty()){
+            System.out.println("No games in the library yet.");
+        }else{
+            System.out.println(" " + allGames.size() + " game(s) found:\n");
+        }
+        for(game g : allGames){
+            System.out.println(g.getDetails());
+            continue;
+        }
+        if(typeChoice!= 1 && typeChoice != 2){
+            System.out.println("Please choose a valid option.");
+        }
     }
+    
     static int readInt(String prompt){
         System.out.print(prompt);
         while(!scanner.hasNextInt()){

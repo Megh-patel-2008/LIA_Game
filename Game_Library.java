@@ -170,4 +170,7 @@ public class Game_Library
     public ArrayList<game> getGames(){
         return games;
     }
+    public ArrayList<game> getAllGames(){
+        return new ArrayList<>(games);
+    }
 }
