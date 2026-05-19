@@ -142,15 +142,6 @@ public class Main
             System.out.println("                                       All Games in Library");
             System.out.println("======================================================================================================================");
         }
-        if(allGames.isEmpty()){
-            System.out.println("No games in the library yet.");
-        }else{
-            System.out.println(" " + allGames.size() + " game(s) found:\n");
-        }
-        for(game g : allGames){
-            System.out.println(g.getDetails());
-            continue;
-        }
         if(typeChoice!= 1 && typeChoice != 2){
             System.out.println("Please choose a valid option.");
         }
